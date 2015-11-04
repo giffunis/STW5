@@ -1,0 +1,22 @@
+{
+  "name": "first_app_expressjs",
+  "version": "0.0.1",
+  "description": "My first app with ExpressJS",
+  "main": "temperatura.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giffunis/STW5.git"
+  },
+  "keywords": [
+    "ExpressJS"
+  ],
+  "author": "Jose Saul Giffuni Becerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giffunis/STW5/issues"
+  },
+  "homepage": "https://github.com/giffunis/STW5#readme"
+}
