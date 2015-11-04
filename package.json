@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/giffunis/STW5/issues"
   },
-  "homepage": "https://github.com/giffunis/STW5#readme"
+  "homepage": "https://github.com/giffunis/STW5#readme",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
 }
