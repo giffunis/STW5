@@ -13,8 +13,21 @@
 
     <main>
         <div class="jumbotron">
-            <h1>This is great</h1>
-            <p>Welcome to templating using EJS</p>
+            <h2>This is great, my first ExpressJS app</h2>
+            <p>This is my converter without Web-Worker</p>
+            <br>
+
+            <table>
+              <tr>
+                <th>Temperature to convert (Example: 32f, 3.2e1F, -5,7C) =></th>
+                <td><input id="entrada" autofocus onchange="convertir()"; placeholder="3.2e1f" size 30></td>
+              </tr>
+              <tr>
+                <th>Is:</th>
+                  <td><span class="output" id="salida"></span></td>
+              </tr>
+            </table>
+
         </div>
     </main>
 
