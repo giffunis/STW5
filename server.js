@@ -17,6 +17,9 @@ app.set('view engine', 'ejs');
 // set views folder
 app.set('views', path.join(__dirname, 'views'));
 
+var expressLayouts = require('express-ejs-layouts');
+app.set('layout', 'layout'); // defaults to 'layout'
+
 // set static folder
 app.use(express.static('sources'));
 
