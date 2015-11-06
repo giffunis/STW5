@@ -22,7 +22,7 @@ app.use(express.static('sources'));
 
 // index page
 app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('pages/index', { title:"Convert your temperature free!"});
 });
 
 // about page
