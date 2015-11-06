@@ -3,11 +3,13 @@
 var express = require('express');
 var app = express();
 
+var path = require('path');
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
 // set static folder
-app.use(express.static('sources'))
+app.use(express.static('sources'));
 
 // use res.render to load up an ejs view file
 

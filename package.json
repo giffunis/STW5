@@ -21,6 +21,7 @@
   "homepage": "https://github.com/giffunis/STW5#readme",
   "devDependencies": {
     "ejs": "^2.3.4",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "path": "^0.12.7"
   }
 }
