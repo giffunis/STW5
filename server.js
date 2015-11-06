@@ -5,6 +5,10 @@ var app = express();
 
 var path = require('path');
 
+// instruct the app to use the `bodyParser()` middleware for all routes
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
