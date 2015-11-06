@@ -8,6 +8,9 @@ var path = require('path');
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
+// set views folder
+app.set('views', path.join(__dirname, 'views'));
+
 // set static folder
 app.use(express.static('sources'));
 
