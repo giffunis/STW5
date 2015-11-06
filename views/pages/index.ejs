@@ -21,8 +21,10 @@
               <h3><%- title  %></h3>
               <form action="/" method="post">
                 Temperature to convert (Example: 32f, 3.2e1F, -5,7C) =>
-                <input type="text" name="userName" placeholder="32F" autofocus />
+                <input type="text" name="entrada" placeholder="32F" autofocus />
                 <br/>
+                <span class="output"><%- resultado  %></span>
+                <br>
                 <button type="submit">Convert</button>
               </form>
             </div>

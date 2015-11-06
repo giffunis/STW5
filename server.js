@@ -9,6 +9,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
+var temperature = require("./sources/js/temperature.js");
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
@@ -22,7 +24,13 @@ app.use(express.static('sources'));
 
 // index page
 app.get('/', function(req, res) {
-    res.render('pages/index', { title:"Convert your temperature free!"});
+    res.render('pages/index', { title:"Convert your temperature free!", resultado:" "});
+});
+
+app.post('/', function(req, res){
+    var temp = new temperature(req.body.entrada);
+    var output = temp.convert();
+    res.render('pages/index',{title:"Convert your temperature free!", resultado: output});
 });
 
 // about page

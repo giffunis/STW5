@@ -18,8 +18,6 @@ function Medida(){
       this.valor = datosEntrada[0];
       this.tipo = datosEntrada[1];
       break;
-    default:
-      alert("Error interno");
   }
 }
 
@@ -37,7 +35,4 @@ Temperatura.prototype.convert = function(){
   }
 }
 
-function convertir(){
-  temp = new Temperatura(entrada.value);
-  salida.innerHTML = temp.convert();
-}
+module.exports = Temperatura;
